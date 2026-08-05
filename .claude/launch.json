@@ -4,7 +4,7 @@
     {
       "name": "angular-unit-of-work-demo",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "start", "--", "--port", "4300"],
+      "runtimeArgs": ["run", "start"],
       "port": 4300
     }
   ]
