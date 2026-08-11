@@ -1,5 +1,8 @@
 # angular-unit-of-work-demo
 
+[![live demo](https://img.shields.io/badge/demo-live-brightgreen)](https://dungztranviet.github.io/unit-of-work-demo/)
+[![angular-unit-of-work](https://img.shields.io/npm/v/angular-unit-of-work.svg?label=angular-unit-of-work)](https://www.npmjs.com/package/angular-unit-of-work)
+
 A small standalone, zoneless Angular app demoing [angular-unit-of-work](https://github.com/dungztranviet/angular-unit-of-work) — five scenarios, each editing a real `WritableSignal` directly through the UI (no `FormGroup`, no Reactive Forms) with a live `changes()` / `hasChanges()` panel underneath.
 
 | Route | Scenario |
@@ -12,7 +15,17 @@ A small standalone, zoneless Angular app demoing [angular-unit-of-work](https://
 
 ## Running it
 
-The package is consumed via `npm link`, not from the npm registry (it isn't published yet):
+`angular-unit-of-work` is consumed as a normal npm dependency:
+
+```bash
+npm install
+npm start
+```
+
+### Developing against a local copy of the package
+
+If you're changing `angular-unit-of-work` itself and want this app to pick up unpublished edits,
+link it instead of installing from the registry:
 
 ```bash
 cd ../angular-unit-of-work
